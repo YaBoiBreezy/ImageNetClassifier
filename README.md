@@ -6,6 +6,7 @@ it is based on AlexNet, used keras tuner to tune the hyperparameters. Itloads da
 The top5 file was to get my top-5 error rate, which was 25%
 
 I then did transferLearning.py, which used my trained weights on a 5-class 2216-image flower database. That was very difficult, since the flowers are very similar (roses vs red tulips, yellow dandelions vs sunflowers, etc.)
+Database came from https://www.kaggle.com/datasets/imsparsh/flowers-dataset , I deleted 500 images for being unrelated/mixtures of many types of flowers/unrecognizable fields of flowers
 I managed to get 86% accuracy, which is pretty good given the pretrained model type.
 Top-5 accuracy was 100% (that's a joke, since the correct answer of a 5-class dataset is always in the top 5 guesses lol)
 
